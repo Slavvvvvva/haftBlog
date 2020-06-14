@@ -47,47 +47,91 @@ nav{
     box-shadow: -1px 33px 58px -1px rgba(0,0,0,0.75);
     margin-top: 3px;
 }
-
 main{
     width:80%;
     margin: 0 auto;
+}
+.text_var1{
+    width:25%;
 }
 section {
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 100px;
-    
+    align-items: start;
 }
-.text_var1 h3{
+ h3{
     font-size: 14px;
     color:rgba(39, 61, 70, 0.6);
 }
-.text_var1 h2{
+ h2{
     font-size: 24px;
     color: #273d46;
 }
-.text_var1 p{
+ p{
     font-size: 18px;
     color: rgba(39, 61, 70, 0.8);
 }
-
-
-.picture_var1 img{
+ img{
     box-shadow: 0px 15px 65px 0 #0f101026;
     border: solid 7px #ffffff;
-    float: right;
-    width:80%;
+    width: 80%;
     height: auto;
 }
-.picture_var1 img:nth-child(2){
+.picture_var1{
+    display: block;
+    float: right;
+    height: auto;
+}
+.picture_var1 img{
+    display: block;
+    float: right;
+}
+
+.img2{
     width:30%;
     height: auto;
     position: relative;
-    z-index: 2;
-    bottom: 67%;
-    left:-60%;
+    z-index : 2;
+    bottom : 50%;
+    left: -60%;
 }
+.loockMore{
+    display: block;
+    width: 199px;
+    height: 44px;
+    border-radius: 21.5px;
+    background-color: #80b7b3;
+    color: white;
+    border:none;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+button:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+    border: none;
+}
+button:focus {
+    outline: none;
+}
+.sec2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.picture_var2  {
+    text-align: center;
+}
+.text_var2{
+    margin: 0 auto;
+    text-align: center;
+}
+.sec2{
+    margin-top: 20px;
+}
+
 
 @media screen and (min-width:900px){
     .hamburger{
@@ -113,8 +157,6 @@ section {
    }
 
 }
-
-
 
 @media screen and (min-width:900px){
      .text_var1{
