@@ -105,6 +105,7 @@ section {
     margin: 0 auto;
     margin-bottom: 15px;
 }
+
 button:active {
     transform: translateY(1px);
     filter: saturate(150%);
@@ -117,6 +118,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 20px;
 }
 .picture_var2  {
     text-align: center;
@@ -125,10 +127,41 @@ button:focus {
     margin: 0 auto;
     text-align: center;
 }
-.sec2{
-    margin-top: 20px;
+.sec3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sec3 img{
+    width: 40%;
+}
+.text_var4{
+    width: 70%;
+    background-color: white;
+    padding: 30px 50px;
+    padding-bottom: 0;
+    position: relative;
+    right:-20%;
+    bottom: 40px;
+}
+.text_var4 button{
+    position: relative;
+    bottom: -40px;
+}
+.text_var31{
+    padding-top: 35px;
+    width: 50%;
 }
 
+footer{
+    height: 100px;
+    background-color: green;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-image: url(../img/IMG_20200418_130742.jpg);
+    background-position: center;
+    opacity: 0.5;
+}
 
 @media screen and (min-width:900px){
     .hamburger{
@@ -151,6 +184,15 @@ button:focus {
    }
    section{
        margin-top: 30px;
+   }
+   .sec3 img{
+       width: 80%;
+       margin: 0 auto;
+   }
+   .text_var4{
+       position: static;
+       margin: 0 auto;
+       width: 100%;
    }
 
 }
