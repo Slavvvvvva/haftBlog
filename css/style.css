@@ -26,6 +26,7 @@ header h1 {
     margin: 0 ;
     justify-content: center;
     flex-grow: 1;
+    
 }
 header ul{
     list-style: none;
@@ -85,7 +86,7 @@ section {
     border: solid 7px #ffffff;
     width: 80%;
     height: auto;
-
+    box-shadow: -1px 33px 58px -1px rgba(0,0,0,0.5);
 }
 .img2{
     width:30%;
@@ -104,6 +105,7 @@ section {
     border:none;
     margin: 0 auto;
     margin-bottom: 15px;
+    box-shadow: -1px 33px 58px -1px rgba(0,0,0,0.5);
 }
 
 button:active {
@@ -143,6 +145,7 @@ button:focus {
     position: relative;
     right:-20%;
     bottom: 40px;
+    box-shadow: -1px 33px 58px -1px rgba(0,0,0,0.55);
 }
 .text_var4 button{
     position: relative;
@@ -161,6 +164,11 @@ footer{
     background-image: url(../img/IMG_20200418_130742.jpg);
     background-position: center;
     opacity: 0.5;
+}
+.shorter{
+    max-height: 100px;
+    overflow: hidden;
+    margin-bottom: 30px;
 }
 
 @media screen and (min-width:900px){
