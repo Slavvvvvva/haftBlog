@@ -182,7 +182,7 @@ footer{
 .img2activ {
     
     position : fixed;
-    bposition: absolute;  /* подробнее про position: absolute; */
+    position: absolute;  /* подробнее про position: absolute; */
     top: 0;
     left: 0;
     bottom: 0;
