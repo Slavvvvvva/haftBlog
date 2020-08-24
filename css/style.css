@@ -17,6 +17,7 @@ a{
 }
 header{
     display: flex;
+    position: relative;
 }
 header h1 {
     font-family: 'Marck Script', cursive;
@@ -32,23 +33,43 @@ header ul{
     list-style: none;
 }
 nav{
-    display: none;
+    color:white;
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    background-color:#e6841485;
+    width: 300px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    border-radius:21px
+    
+}
+.drop_menu li{
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #e47418;
+    border-radius:21px;
+    padding-top:15px;
+    padding-left:80px
+
 }
 .hamburger{
     width: 150px;
     height: 70px;
-    background-color: #80b7b3;
+    background-color: #e47418;;
     border:none;
     font-family: PlayfairDisplay;
     font-size: 35px;
     text-align: center;
     color:white;
-    padding-top: 21px;
+    padding-top: 15px;
     padding-right: 21px;
     padding-bottom: 28px;
     padding-left: 21px;
     box-shadow: -1px 33px 58px -1px rgba(0,0,0,0.75);
     margin-top: 3px;
+    border-radius: 21px;
 }
 main{
     width:80%;
@@ -160,15 +181,7 @@ button:focus {
     width: 50%;
 }
 
-footer{
-    height: 100px;
-    background-color: green;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    background-image: url(../img/IMG_20200418_130742.jpg);
-    background-position: center;
-    opacity: 0.5;
-}
+
 .shorter{
     max-height: 100px;
     overflow: hidden;
@@ -192,6 +205,62 @@ footer{
     z-index: 3;
     
 }
+
+/* footet */
+
+footer{
+    height: 100px;
+    background-color: green;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-image: url(../img/IMG_20200418_130742.jpg);
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    
+    
+
+}
+
+.logoinc{
+
+    width: 90px;
+    height: 89px;
+    border-style: none;
+    align-items:center;
+    background-color:white;
+    align-self: center;
+   
+
+}
+.vk{
+    background-image: url(../img/icons8-vk.com.svg);
+    background-size:60px 60px;
+    width: 50px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.fb{
+    background-image: url(../img/icons8-facebook.svg);
+    background-size : 50px 50px;
+    width: 50px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.media{
+    width: 150px;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
 
 
 @media screen and (min-width:1700px){
