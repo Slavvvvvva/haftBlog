@@ -42,8 +42,15 @@ nav{
     padding-top: 20px;
     padding-right: 40px;
     padding-bottom: 20px;
-    border-radius:21px
+    border-radius:21px;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
     
+}
+.close_menu{
+    display: none;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
 }
 .drop_menu li{
     height: 30px;
@@ -250,12 +257,25 @@ footer{
     background-repeat: no-repeat;
     background-position: center
 }
+.inst{
+    background-image: url(../img/instagram.svg);
+    background-size : 45px 45px;
+    width: 50px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center
+}
 
 .media{
-    width: 150px;
+    width: 200px;
     height:auto;
     display: flex;
     justify-content: space-between;
+}
+.media a{
+    display: block;
+    width: 50px;
+    height: 100px;
 }
 
 

@@ -2,9 +2,12 @@
 let bigger = document.querySelector('#bigger2');
 let text = document.querySelector('#short');
 let bidimg= document.querySelectorAll('.imgb');
+let hamBtn = document.querySelector('.hamburger');
+let menu = document.querySelector('.nav');
 
+let check2 = true;
 let check1 = true;
-let check=true;
+let check = true;
 
 bigger.addEventListener("click",function(){
     console.log("aga");
@@ -32,4 +35,16 @@ i.addEventListener("click",function(){
     
 });
 });
+
+hamBtn.addEventListener("click",function(){
+    if (check2==true){
+        console.log("aga")
+        menu.classList.remove("close_menu");
+        check2 = false;
+    } else{
+        menu.classList.add("close_menu");
+        check2= true;
+    }
+});
+
 
