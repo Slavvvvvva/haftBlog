@@ -32,6 +32,7 @@ header h1 {
 header ul{
     list-style: none;
 }
+
 nav{
     color:white;
     position: absolute;
@@ -43,23 +44,23 @@ nav{
     padding-right: 40px;
     padding-bottom: 20px;
     border-radius:21px;
-    transition-duration: 3s;
-    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
-    
+    overflow: hidden;
+    transform: translateX(0px);
+    transition: all 800ms cubic-bezier(.29, 1.01, 1, -0.68);
+   
 }
-.close_menu{
-    display: none;
-    transition-duration: 3s;
-    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+nav.close_menu {
+    transform: translateX(-500px);
 }
+
 .drop_menu li{
     height: 30px;
     margin-bottom: 10px;
     background-color: #e47418;
     border-radius:21px;
     padding-top:15px;
-    padding-left:80px
-
+    padding-left:80px;
+    
 }
 .hamburger{
     width: 150px;
@@ -209,8 +210,7 @@ button:focus {
     margin: auto;
     width: 90%;
     height: auto;
-    z-index: 3;
-    
+    z-index: 3; 
 }
 
 /* footet */
