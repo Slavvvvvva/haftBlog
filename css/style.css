@@ -50,7 +50,7 @@ nav{
    
 }
 nav.close_menu {
-    transform: translateX(-500px);
+    transform: translateX(-580px);
 }
 
 .drop_menu li{
@@ -326,6 +326,9 @@ footer{
         width: 97%;
         margin: auto;
     }
+   .nav{
+       left: 50%;
+   }
 }
 
 @media screen and (min-width:900px){
