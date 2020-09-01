@@ -328,6 +328,7 @@ footer{
     }
    .nav{
        left: 50%;
+       margin-left: -170px;
    }
 }
 
