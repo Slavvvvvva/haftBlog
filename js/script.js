@@ -57,7 +57,7 @@ i.addEventListener("click",function(){
 
 hamBtn.addEventListener("click",function(){
     if (check2==true){
-        console.log("aga")
+        console.log("aga");
         menu.classList.remove("close_menu");
         check2 = false;
     } else{
