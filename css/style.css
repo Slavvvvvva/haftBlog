@@ -47,6 +47,7 @@ nav{
     overflow: hidden;
     transform: translateX(0px);
     transition: all 800ms cubic-bezier(.29, 1.01, 1, -0.68);
+    z-index: 1;
    
 }
 nav.close_menu {
@@ -201,7 +202,7 @@ button:focus {
 /* Animation*/
 
 .img2activ {
-    
+    background-color:rgba(0, 0, 0, 0.76);
     position : fixed;
     top: 0;
     left: 0;
@@ -209,8 +210,8 @@ button:focus {
     right: 0;
     margin: auto;
     width: 90%;
-    height: auto;
     z-index: 3; 
+    object-fit: contain;
 }
 
 /* footet */
@@ -326,6 +327,7 @@ footer{
         width: 97%;
         margin: auto;
     }
+
    .nav{
        left: 50%;
        margin-left: -170px;
