@@ -210,22 +210,6 @@ button:focus {
     transition-duration: 1s;
 }
 
-
-/* Animation*/
-
-.img2activ {
-    background-color:rgba(0, 0, 0, 0.76);
-    position : fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    width: 90%;
-    z-index: 3; 
-    object-fit: contain;
-}
-
 /* footet */
 
 footer{
@@ -292,45 +276,59 @@ footer{
 }
 
 // Галерея превью
-
 .galary_process{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    .process{
-        width: 300px;
-        height: 300px;
-        background-color: rgba(0, 0, 0, 0.582);
-        flex-wrap: wrap;
-        margin-right: 60px;
-        position: relative;
-        margin-top: 60px;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        div{
-            width: 340px;
-            height: 30px;
-            background-color:rgb(185, 92, 16);
-            box-shadow : 0px 15px 65px 0 #0f101026;
-            border: solid 7px #ffffff;
-            position: absolute;
-            top:270px;
-            left:-20px;
-            p{
-                text-align: center;
-                margin:0;
-                padding-top: 5px;
-                color:white;
-                letter-spacing: 3px;
-                font-weight: bold;
-            }
+    justify-content: space-around;   
+}
+.process{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.582);
+    flex-wrap: wrap;
+    margin-right: 60px;
+    position: relative;
+    margin-top: 60px;
+    div{
+        width: 340px;
+        height: 30px;
+        background-color:rgb(185, 92, 16);
+        box-shadow : 0px 15px 65px 0 #0f101026;
+        border: solid 7px #ffffff;
+        position: absolute;
+        top:270px;
+        left:-20px;
+        p{
+            text-align: center;
+            margin:0;
+            padding-top: 5px;
+            color:white;
+            letter-spacing: 3px;
+            font-weight: bold;
         }
     }
 }
+.little_slider{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Увеличение*/
+
+.img2activ {
+    background-color:rgba(0, 0, 0, 0.76);
+    position : fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    z-index: 3 ; 
+    object-fit: contain;
+}
+
 
 
 @media screen and (min-width:1700px){
