@@ -307,7 +307,7 @@ footer{
             letter-spacing: 3px;
             font-weight: bold;
         }
-    }
+    }  
 }
 .little_slider{
     width: 100%;
@@ -329,6 +329,32 @@ footer{
     object-fit: contain;
 }
 
+// slider button
+@mixin slider_button {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top:50%;
+    margin-top:-25px;
+    background-image: url(../img/ic-next.svg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:50px 50px;
+    z-index: 4;
+    display:none;
+}
+.next{
+    @include slider_button;
+    right: 3%;
+}
+.prev{
+    @include slider_button;
+    left: 3%;
+    transform: rotate(180deg);
+}
+.show{
+    display:block;
+}
 
 
 @media screen and (min-width:1700px){
